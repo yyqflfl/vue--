@@ -2,5 +2,5 @@
 
 界面如下：
 
-![image](https://https://github.com/yyqflfl/vue-calculate/blob/master/image/1.png)
+![image](https://github.com/yyqflfl/vue-calculate/blob/master/image/1.png)
 
