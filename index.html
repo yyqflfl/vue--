@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="calculate">
+        <span>计算两个数的和</span>
+        <span>a:</span>
+        <span>
+            <input type="text" v-model='a'>
+        </span>
+        <span>b:</span>
+        <span>
+            <input type="text" v-model='b' v-on:keyup.13='calculate'>
+        </span>
+        <button v-on:click='calculate'>计算</button>
+        <span>结果:</span>
+        <span v-text='result'></span>
+    </div>
+    <script type="text/javascript" src="./js/vue.js"></script>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#calculate',
+            data: {
+                a: '',
+                b: '',
+                result: ''
+            },
+            methods: {
+                calculate: function() {
+                    return this.result = parseInt(this.a) + parseInt(this.b);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
