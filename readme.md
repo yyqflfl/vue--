@@ -2,5 +2,5 @@
 
 界面如下：
 
-<img src="./assets/1.png">
+![image](https://https://github.com/yyqflfl/vue-calculate/blob/master/image/1.png)
 
